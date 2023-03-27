@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="8.8186131mm"
+   height="10.086758mm"
+   viewBox="0 0 8.8186131 10.086758"
+   version="1.1"
+   id="svg127"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="triangle2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview129"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="5.2913967"
+     inkscape:cx="33.639512"
+     inkscape:cy="35.1514"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs124">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient249">
+      <stop
+         style="stop-color:#008080;stop-opacity:1;"
+         offset="0"
+         id="stop245" />
+      <stop
+         style="stop-color:#ff6600;stop-opacity:1"
+         offset="1"
+         id="stop247" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient249"
+       id="linearGradient251"
+       x1="111.6057"
+       y1="127.80652"
+       x2="97.554977"
+       y2="141.70723"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-102.79355,-127.85143)">
+    <path
+       sodipodi:type="star"
+       style="fill:url(#linearGradient251);fill-opacity:1;stroke-width:0.264583"
+       id="path183"
+       inkscape:flatsided="true"
+       sodipodi:sides="3"
+       sodipodi:cx="105.78857"
+       sodipodi:cy="132.94286"
+       sodipodi:r1="5.8243852"
+       sodipodi:r2="2.9121926"
+       sodipodi:arg1="-2.0778948"
+       sodipodi:arg2="-1.0306973"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 102.96,127.85143 8.65216,5.18753 -8.81861,4.89922 z"
+       inkscape:transform-center-x="-1.4142844"
+       inkscape:transform-center-y="-0.04805146" />
+  </g>
+</svg>

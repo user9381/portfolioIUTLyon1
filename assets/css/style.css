@@ -1,0 +1,685 @@
+@font-face {
+  font-family: "Roboto_Condensed";
+  src: url('/assets/font/RobotoCondensed-Regular.ttf');
+}
+@font-face {
+  font-family: "Roboto_Condensed";
+  font-style: italic;
+  src: url('/assets/font/RobotoCondensed-Italic.ttf');
+}
+@font-face {
+  font-family: "Roboto_Condensed";
+  font-weight: bold;
+  src: url('/assets/font/RobotoCondensed-Bold.ttf');
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto_Condensed";
+}
+
+.scroll-container {
+  height: 100vh; /* hauteur du conteneur */
+  overflow-y: scroll; /* activer le défilement vertical */
+  scroll-snap-type: y mandatory; /* définir le type de défilement vertical obligatoire */
+}
+.scroll-item {
+  height: 100vh; /* hauteur de chaque élément */
+  scroll-snap-align: start; /* alignement obligatoire sur le début de chaque élément */
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#illustration {
+  width: 350px;
+  transform-style: preserve-3d;
+  transform: translateZ(80px)
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+
+/* Section Home */
+#home {
+  overflow: hidden;
+}
+
+#name {
+  display: flex;
+  align-items: center;
+  color: #E4D9FF;
+  padding: 10px;
+  font-size: 3em;
+  letter-spacing: .05em;
+  transform: translateZ(70px);
+  border: double 5px #E4D9FF;
+  text-shadow: 1px 1px 0 #1E1C21, 2px 2px 0 #1E1C21, 3px 3px 0 #1E1C21, 4px 4px 0 #1E1C21, 5px 5px 0 #1E1C21;
+}
+
+/* SVG (image) */
+#item-1 {
+  position: absolute;
+  top: 11%;
+  transform-style: preserve-3d;
+  transform: translateZ(150px)
+}
+#item-2 {
+  position: absolute;
+  top: 6%;
+  right: 25%;
+  transform-style: preserve-3d;
+  transform: translateZ(0px)
+}
+#item-3 {
+  position: absolute;
+  top: 27%;
+  left: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(50px)
+}
+#item-4 {
+  position: absolute;
+  bottom: 30%;
+  left: 18%;
+  transform-style: preserve-3d;
+  transform: translateZ(150px)
+}
+#item-5 {
+  position: absolute;
+  bottom: 13%;
+  right: 28%;
+  transform-style: preserve-3d;
+  transform: translateZ(300px)
+}
+#item-6 {
+  position: absolute;
+  bottom: 13%;
+  right: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(100px)
+}
+#item-7 {
+  position: absolute;
+  bottom: 41%;
+  right: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(10px)
+}
+#item-8 {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  transform-style: preserve-3d;
+  transform: translateZ(10px)
+}
+#item-9 {
+  position: absolute;
+  bottom: 7%;
+  left: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(30px)
+}
+#item-10 {
+  position: absolute;
+  top: 6%;
+  left: 18%;
+  transform-style: preserve-3d;
+  transform: translateZ(0px)
+}
+#item-11 {
+  position: absolute;
+  top: 7%;
+  right: 0%;
+  transform-style: preserve-3d;
+  transform: translateZ(100px)
+}
+#item-12 {
+  position: absolute;
+  bottom: 7%;
+  left: 31%;
+  transform-style: preserve-3d;
+  transform: translateZ(100px)
+}
+#item-13 {
+  position: absolute;
+  bottom: 27%;
+  left: 0%;
+  transform-style: preserve-3d;
+  transform: translateZ(100px)
+}
+#item-14 {
+  position: absolute;
+  top: 13%;
+  left: 5%;
+  transform-style: preserve-3d;
+  transform: translateZ(200px)
+}
+#item-15 {
+  position: absolute;
+  bottom: 25%;
+  right: 40%;
+  transform-style: preserve-3d;
+  transform: translateZ(80px)
+}
+#item-16 {
+  position: absolute;
+  bottom: 32%;
+  left: 40%;
+  transform-style: preserve-3d;
+  transform: translateZ(200px)
+}
+
+
+
+.comp .card {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Text content right */
+.text-content-right {
+  width: 450px;
+  transform-style: preserve-3d;
+  transform: translateZ(80px)
+}
+.text-content-right h1 {
+  text-transform: uppercase;
+}
+.text-content-right h2 {
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.text-content-right p {
+  margin-top: 10px;
+}
+.text-content-right ul {
+  margin-top: 10px;
+  list-style: inside;
+  list-style-type: circle;
+}
+
+/* Button comp */
+.comp a {
+  color: #000;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 0.9em 2em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  text-decoration: none;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.comp a:hover {
+  border: 1px solid #000;
+}
+
+#prez .text-content-right {
+  color: #fff;
+}
+
+/* Section PrezComp1 */
+
+/* SVG (image) */
+#item-comp1-1 {
+  width: 400px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(0px);
+}
+#item-comp1-2 {
+  width: 80px;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(50px);
+  transform: rotate(180deg);
+}
+#item-comp1-3 {
+  width: 50px;
+  position: absolute;
+  top: 10%;
+  right: 40%;
+  transform-style: preserve-3d;
+  transform: translateZ(100px);
+  transform: rotate(90deg);
+}
+#item-comp1-4 {
+  width: 100px;
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(50px);
+  transform: rotate(90deg);
+}
+#item-comp1-5 {
+  width: 50px;
+  position: absolute;
+  bottom: 10%;
+  right: 35%;
+  transform-style: preserve-3d;
+  transform: translateZ(0px);
+}
+#item-comp1-6 {
+  width: 80px;
+  position: absolute;
+  bottom: 30%;
+  left: 45%;
+  transform-style: preserve-3d;
+  transform: translateZ(20px);
+  transform: rotate(180deg);
+}
+#item-comp1-7 {
+  width: 70px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(40px);
+}
+#item-comp1-8 {
+  width: 50px;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(40px);
+  transform: rotate(90deg);
+}
+
+
+
+/* Section PrezComp2 */
+
+/* SVG (image) */
+#item-comp2-1 {
+  width: 400px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(0px);
+}
+#item-comp2-2 {
+  width: 80px;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(50px);
+  transform: rotate(180deg);
+}
+#item-comp2-3 {
+  width: 50px;
+  position: absolute;
+  top: 10%;
+  right: 40%;
+  transform-style: preserve-3d;
+  transform: translateZ(100px);
+  transform: rotate(90deg);
+}
+#item-comp2-4 {
+  width: 100px;
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(50px);
+  transform: rotate(90deg);
+}
+#item-comp2-5 {
+  width: 50px;
+  position: absolute;
+  bottom: 10%;
+  right: 35%;
+  transform-style: preserve-3d;
+  transform: translateZ(0px);
+}
+#item-comp2-6 {
+  width: 80px;
+  position: absolute;
+  bottom: 30%;
+  left: 45%;
+  transform-style: preserve-3d;
+  transform: translateZ(20px);
+  transform: rotate(180deg);
+}
+#item-comp2-7 {
+  width: 70px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(40px);
+}
+#item-comp2-8 {
+  width: 50px;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(40px);
+  transform: rotate(90deg);
+}
+
+
+
+/* Section PrezComp3 */
+
+/* SVG (image) */
+#item-comp3-1 {
+  width: 400px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(0px);
+}
+#item-comp3-2 {
+  width: 80px;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(50px);
+  transform: rotate(180deg);
+}
+#item-comp3-3 {
+  width: 50px;
+  position: absolute;
+  top: 10%;
+  right: 40%;
+  transform-style: preserve-3d;
+  transform: translateZ(100px);
+  transform: rotate(90deg);
+}
+#item-comp3-4 {
+  width: 100px;
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(50px);
+  transform: rotate(90deg);
+}
+#item-comp3-5 {
+  width: 50px;
+  position: absolute;
+  bottom: 10%;
+  right: 35%;
+  transform-style: preserve-3d;
+  transform: translateZ(0px);
+}
+#item-comp3-6 {
+  width: 80px;
+  position: absolute;
+  bottom: 30%;
+  left: 45%;
+  transform-style: preserve-3d;
+  transform: translateZ(20px);
+  transform: rotate(180deg);
+}
+#item-comp3-7 {
+  width: 70px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(40px);
+}
+#item-comp3-8 {
+  width: 50px;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(40px);
+  transform: rotate(90deg);
+}
+
+
+
+/* Section PrezComp4 */
+
+/* SVG (image) */
+#item-comp4-1 {
+  width: 400px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(0px);
+}
+#item-comp4-2 {
+  width: 80px;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(50px);
+  transform: rotate(180deg);
+}
+#item-comp4-3 {
+  width: 50px;
+  position: absolute;
+  top: 10%;
+  right: 40%;
+  transform-style: preserve-3d;
+  transform: translateZ(100px);
+  transform: rotate(90deg);
+}
+#item-comp4-4 {
+  width: 100px;
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(50px);
+  transform: rotate(90deg);
+}
+#item-comp4-5 {
+  width: 50px;
+  position: absolute;
+  bottom: 10%;
+  right: 35%;
+  transform-style: preserve-3d;
+  transform: translateZ(0px);
+}
+#item-comp4-6 {
+  width: 80px;
+  position: absolute;
+  bottom: 30%;
+  left: 45%;
+  transform-style: preserve-3d;
+  transform: translateZ(20px);
+  transform: rotate(180deg);
+}
+#item-comp4-7 {
+  width: 70px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(40px);
+}
+#item-comp4-8 {
+  width: 50px;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(40px);
+  transform: rotate(90deg);
+}
+
+
+
+/* Section PrezComp5 */
+
+/* SVG (image) */
+#item-comp5-1 {
+  width: 400px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(0px);
+}
+#item-comp5-2 {
+  width: 80px;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(50px);
+  transform: rotate(180deg);
+}
+#item-comp5-3 {
+  width: 50px;
+  position: absolute;
+  top: 10%;
+  right: 40%;
+  transform-style: preserve-3d;
+  transform: translateZ(100px);
+  transform: rotate(90deg);
+}
+#item-comp5-4 {
+  width: 100px;
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(50px);
+  transform: rotate(90deg);
+}
+#item-comp5-5 {
+  width: 50px;
+  position: absolute;
+  bottom: 10%;
+  right: 35%;
+  transform-style: preserve-3d;
+  transform: translateZ(0px);
+}
+#item-comp5-6 {
+  width: 80px;
+  position: absolute;
+  bottom: 30%;
+  left: 45%;
+  transform-style: preserve-3d;
+  transform: translateZ(20px);
+  transform: rotate(180deg);
+}
+#item-comp5-7 {
+  width: 70px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(40px);
+}
+#item-comp5-8 {
+  width: 50px;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(40px);
+  transform: rotate(90deg);
+}
+
+
+
+/* SECTION PrezComp6 */
+
+/* SVG (image) */
+#item-comp6-1 {
+  width: 400px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(0px);
+}
+#item-comp6-2 {
+  width: 80px;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(50px);
+  transform: rotate(180deg);
+}
+#item-comp6-3 {
+  width: 50px;
+  position: absolute;
+  top: 10%;
+  right: 40%;
+  transform-style: preserve-3d;
+  transform: translateZ(100px);
+  transform: rotate(90deg);
+}
+#item-comp6-4 {
+  width: 100px;
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  transform-style: preserve-3d;
+  transform: translateZ(50px);
+  transform: rotate(90deg);
+}
+#item-comp6-5 {
+  width: 50px;
+  position: absolute;
+  bottom: 10%;
+  right: 35%;
+  transform-style: preserve-3d;
+  transform: translateZ(0px);
+}
+#item-comp6-6 {
+  width: 80px;
+  position: absolute;
+  bottom: 30%;
+  left: 45%;
+  transform-style: preserve-3d;
+  transform: translateZ(20px);
+  transform: rotate(180deg);
+}
+#item-comp6-7 {
+  width: 70px;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform-style: preserve-3d;
+  transform: translateZ(40px);
+}
+#item-comp6-8 {
+  width: 50px;
+  position: absolute;
+  bottom: 10%;
+  left: 30%;
+  transform-style: preserve-3d;
+  transform: translateZ(40px);
+  transform: rotate(90deg);
+}
